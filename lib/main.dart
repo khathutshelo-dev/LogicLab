@@ -48,7 +48,8 @@ class CategoriesScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => CaptionsScreen(category: categories[index]),
+                    builder: (context) =>
+                        CaptionsScreen(category: categories[index]),
                   ),
                 );
               },
@@ -190,7 +191,7 @@ class CaptionsScreen extends StatelessWidget {
         itemCount: captions[category]!.length,
         itemBuilder: (context, index) {
           return Card(
-            color: Colors.pink[200],
+            color: const Color.fromARGB(255, 236, 25, 96),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
